@@ -1,5 +1,6 @@
 """
 Demo file for plotting figure in python 
+version: 0.1
 """
 
 import numpy as np
