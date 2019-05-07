@@ -1,3 +1,8 @@
+"""
+Demo file for plotting figure in python 
+version: 0.10
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator, FormatStrFormatter
