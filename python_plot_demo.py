@@ -66,4 +66,5 @@ plt.gca().yaxis.set_label_coords(-0.05, 0.5)
 plt.annotate("Some text", xy=(1.2, 2.8), xytext=(0.8, -2), arrowprops=dict(arrowstyle="->"))
 
 ## add text to plot
+plt.text(0.45, 0.15, 'Bmim', fontsize = 18 ,color = 'r', transform = plt.gca().transAxes)
 
