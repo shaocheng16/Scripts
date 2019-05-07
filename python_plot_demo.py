@@ -1,5 +1,5 @@
 """
-Demo file for plotting figure in python 
+Demo file for plotting figure in python
 version: 0.10
 """
 
@@ -38,9 +38,13 @@ plt.gca().set_aspect('equal', adjustable='box')
 # adjust distance between sub_plot
 plt.subplots_adjust(wspace=0.0, hspace = 0.0, right=0.8, top=0.9, bottom=0.1)
 
+#====================
 # hide ticks label
+#====================
 plt.gca().set_xticklabels([])
 plt.gca().set_yticklabels([])
+# or
+plt.xticks(visible = False)
 
 # set ticks range
 plt.gca().set_xticks([-0.1,0,0.1])
