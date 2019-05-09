@@ -26,6 +26,14 @@ params = {
 }
 plt.rcParams.update(params)
 
+colors = ['#e6194B', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#42d4f4', '#f032e6', '#bfef45', '#fabebe',
+    |   ¦ '#469990', '#e6beff','#9A6324', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#000075', '#a9a9a9']
+names = ['red', 'green', 'yellow', 'blue', 'orange', 'purple','cyan','megenta', 'lime','pink',
+    |   ¦'teal','lavender', 'brown', 'beige','maroon','mint','olive','apricot','navy','grey']
+
+my_color = dict(zip(names, colors))
+
+
 
 # custom the position of legend
 plt.legend(frameon=False,loc='upper left')
