@@ -85,3 +85,12 @@ plt.annotate("Some text", xy=(1.2, 2.8), xytext=(0.8, -2), arrowprops=dict(arrow
 ## add text to plot
 plt.text(0.45, 0.15, 'Bmim', fontsize = 18 ,color = 'r', transform = plt.gca().transAxes)
 
+##===========
+## specify the location of legend box
+## change the linewidth in legend
+##===========
+leg = ax2.legend(frameon=False, bbox_to_anchor=(1.0, .75))
+for line in leg.get_lines():
+    line.set_linewidth(4.0)
+
+
