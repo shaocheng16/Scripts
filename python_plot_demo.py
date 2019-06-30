@@ -93,4 +93,8 @@ leg = ax2.legend(frameon=False, bbox_to_anchor=(1.0, .75))
 for line in leg.get_lines():
     line.set_linewidth(4.0)
 
+# change the order of legend
+handles, labels = ax1.get_legend_handles_labels()
+order = [0,2,1]
+ax1.legend([handles[idx] for idx in order],[labels[idx] for idx in order], frameon=False)
 
