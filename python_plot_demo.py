@@ -98,3 +98,9 @@ handles, labels = ax1.get_legend_handles_labels()
 order = [0,2,1]
 ax1.legend([handles[idx] for idx in order],[labels[idx] for idx in order], frameon=False)
 
+# custom marker size in scatter plot
+v_val=1.0
+h_val=2.0
+verts = list(zip([-h_val,h_val,h_val,-h_val],[-v_val,-v_val,v_val,v_val]))
+ax.scatter([0.5,1.0],[1.0,2.0], marker=(verts,0))
+
