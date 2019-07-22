@@ -104,3 +104,13 @@ h_val=2.0
 verts = list(zip([-h_val,h_val,h_val,-h_val],[-v_val,-v_val,v_val,v_val]))
 ax.scatter([0.5,1.0],[1.0,2.0], marker=(verts,0))
 
+
+### Plot 3d figure
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+fig = plt.figure(1)
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(kx, ky, kz)
+plt.gca().set_aspect('equal',adjustable='box')
+plt.show()
+
